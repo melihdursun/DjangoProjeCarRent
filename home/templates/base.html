@@ -9,14 +9,12 @@
 		<link rel="shortcut icon" href="{% static 'img/fav.png' %}">
 		<!-- Author Meta -->
 		<meta name="author" content="codepixer">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
 		{% block title %}<title>My aaamazingggg site</title>{% endblock %}
+		<meta name="keywords" content="{% block keywords %} Anasayfa Anahtar Kelimeler {% endblock %}">
+		<meta name="description" content="{% block description %} Anasayfa Kısa Açıklamalar {% endblock %}">
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 
@@ -34,11 +32,10 @@
 			<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
 			<link rel="stylesheet" href="{% static 'css/main.css' %}">
 
-
+		{% block head %} {% endblock %}
 </head>
 
     {% include 'header.html' %}
-    {% block sidebar %}   {% endblock %}
     {% block slider %}   {% endblock %}
     {% block content %}   {% endblock %}
     {% block body %}   {% endblock %}
