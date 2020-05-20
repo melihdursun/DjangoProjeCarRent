@@ -4,23 +4,32 @@
 			    <div class="container">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="{% static 'img/logo.png' %}" alt="" title="" /></a>
+				        <a href="/"><img src="{% static 'img/logo.png' %}" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
-				          <li><a href="about.html">About</a></li>
-				          <li><a href="cars.html">Cars</a></li>
+							{% load mptt_tags %}
+
+    {% recursetree category %}
+        <li class="menu-has-children"><a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
+
+
+
+
+            {% if not node.is_leaf_node %}
+                <ul class="children">
+					<li><a href="/">{{ children }}</a></li>
+                </ul>
+            {% endif %}
+        </li>
+    {% endrecursetree %}
+
+				          <li class="menu-active"><a href="/">Home</a></li>
+				          <li><a href="/about">About</a></li>
 				          <li><a href="service.html">Service</a></li>
 				          <li><a href="team.html">Team</a></li>
 				          <li><a href="blog-home.html">Blog</a></li>
-				          <li><a href="contact.html">Contact</a></li>
-				          <li class="menu-has-children"><a href="">Pages</a>
-				            <ul>
-				              <li><a href="blog-single.html">Blog Single</a></li>
-				              <li><a href="elements.html">Elements</a></li>
-				            </ul>
-				          </li>
+				          <li><a href="/contact">Contact</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->
 			    	</div>
