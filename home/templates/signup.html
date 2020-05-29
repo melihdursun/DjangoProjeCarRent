@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %} Sign Up {{ setting.title }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block header %}
+    {% include "header.html" %}
+{% endblock %}
+
+
+
+{% block content %}
+
+<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								User Sign Up
+							</h1>
+							<p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/signup"> Sign Up</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+					<!-- Start contact-page Area -->
+			<section class="contact-page-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+
+
+								<div class="section-tittle">
+									<h3 class="tittle">Sign Up Formu</h3>
+								</div>
+
+							{% if messages %}
+								{% for message in messages %}
+									<div class="alert alert-{{message.tags}}" role="alert">
+										{{ message }}
+									</div>
+								{% endfor %}
+							{% endif %}
+
+							<form method="post">
+								{% csrf_token %}
+								{% for field in form %}
+									<p>
+										{{ field.label_tag }}<br>
+										{{ field }}
+										{% if field.help_text %}
+											<small style="color: grey">{{ field.help_text }}</small>
+										{% endif %}
+										{% for error in field.errors %}
+											<p style="color: red">{{ error }}</p>
+										{% endfor %}
+									</p>
+								{% endfor %}
+								<button type="submit">Sign Up</button>
+							</form>
+
+
+
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+			<!-- End contact-page Area -->
+
+
+{% endblock %}

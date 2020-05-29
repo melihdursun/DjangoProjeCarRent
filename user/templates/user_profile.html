@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block title %} {{ profile.user_name }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+{% load static %}
+
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+<!-- Bootstrap -->
+			<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+
+	<!-- Slick -->
+			<link type="text/css" rel="stylesheet" href="{% static 'css/slick.css' %}" />
+			<link type="text/css" rel="stylesheet" href="{% static 'css/slick-theme.css' %}" />
+
+	<!-- nouislider -->
+			<link type="text/css" rel="stylesheet" href="{% static 'css/nouislider.min.css' %}" />
+
+	<!-- Custom stlylesheet -->
+			<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+
+<!-- jQuery Plugins -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/bootstrap.min.js' %}"></script>
+			<script src="{% static 'js/slick.min.js' %}"></script>
+			<script src="{% static 'js/nouislider.min.js' %}"></script>
+			<script src="{% static 'js/jquery.zoom.min.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+
+<link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block header %}
+    {% include "header.html" %}
+{% endblock %}
+
+
+
+{% block content %}
+
+<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								User Profile
+							</h1>
+							<p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/user"> User Profile</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+					<!-- Start contact-page Area -->
+			<section class="contact-page-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							{% include "user_panel.html" %}
+						</div>
+
+						<div class="col-md-9">
+							<div class="section-title">
+								<h4 class="title">User İnformations</h4>
+							</div>
+
+							<table class="shopping-cart-table table">
+
+									<tr>
+										<th class="text-left">
+											<a href="/user/update" class="primary-btn">Update Profile</a>
+											<a href="/user/password" class="primary-btn">Change Password</a>
+										</th>
+										<td><img src="{{ profile.image.url }}" style="border-radius: 45px; height: 200px " ></td>
+									</tr>
+
+
+
+									<tr>
+										<th class="text-left">Name Surname</th>
+										<td class="text-left">{{ profile.user_name }}</td>
+										</tr>
+									<tr>
+										<th class="text-left">Email</th>
+										<td class="text-left">{{ profile.user.email }}</td>
+										</tr>
+									<tr>
+										<th class="text-left">Phone</th>
+										<td class="text-left">{{ profile.phone }}</td>
+										</tr>
+									<tr>
+										<th class="text-left">Address</th>
+										<td class="text-left">{{ profile.address }}</td>
+										</tr>
+									<tr>
+										<th class="text-left">City</th>
+										<td class="text-left">{{ profile.city }}</td>
+										</tr>
+									<tr>
+										<th class="text-left">Country</th>
+										<td class="text-left">{{ profile.country }}</td>
+									</tr>
+
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End contact-page Area -->
+
+
+{% endblock %}
