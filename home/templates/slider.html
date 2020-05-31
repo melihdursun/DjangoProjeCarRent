@@ -54,25 +54,29 @@
 
 </div>
 	<!-- Account -->
-						<li class="header-account dropdown default-dropdown">
-							{% if user.id is not None %}
-							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-								<div class="header-btns-icon">
-									<i class="fa fa-user-o"></i>
-								</div>
-								<strong class="text-uppercase">{{ user.first_name }} <i class="fa fa-caret-down"></i></strong>
-							</div>
-							{% else %}
-							<a href="/login/" class="text-uppercase">Login</a> / <a href="/signup/" class="text-uppercase">Sign Up</a>
-							{% endif %}
-							<ul class="custom-menu">
-								<li><a href="/user"><i class="fa fa-user-o"></i> My Account</a></li>
-								<li><a href="/user/bookings"><i class="fa fa-exchange"></i> My Bookings</a></li>
-								<li><a href="/user/comments"><i class="fa fa-check"></i> My Comments</a></li>
-								<li><a href="/logout/"><i class="fa fa-unlock-alt"></i> Logout</a></li>
-							</ul>
-						</li>
-						<!-- /Account -->
+
+
+	<li class="header-account dropdown default-dropdown">
+		{% if user.id is not None %}
+		<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+			<div class="header-btns-icon">
+				<i class="fa fa-user-o"></i>
+			</div>
+			<strong class="text-uppercase">{{ user.first_name }}<i class="fa fa-caret-down"></i></strong>
+		</div>
+		{% else %}
+		<a href="/login/" class="text-uppercase">Login</a> / <a href="/signup/" class="text-uppercase">Sign Up</a>
+		{% endif %}
+		<ul class="custom-menu">
+			<li><a href="/user"><i class="fa fa-user-o"></i> My Account</a></li>
+			<li><a href="/user/bookings"><i class="fa fa-exchange"></i> My Bookings</a></li>
+			<li><a href="/user/comments"><i class="fa fa-check"></i> My Comments</a></li>
+			<li><a href="/logout/"><i class="fa fa-unlock-alt"></i> Logout</a></li>
+		</ul>
+	</li>
+
+
+	<!-- /Account -->
 
 
 
