@@ -98,16 +98,8 @@
 						<div class="product-body">
 
 							<h2 class="product-name">{{ product.title }}</h2>
-							<h3 class="product-price">TL{{ product.price }} <del class="product-old-price">${{ product.price }}</del></h3>
-							<div>
-								<div class="product-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-o empty"></i>
-								</div>
-							</div>
+							<h3 class="product-price">{{ product.price }} TL</h3>
+
 							<p><strong>Availability:</strong> In Stock</p>
 							<p><strong>Brand:</strong> Rent A Car</p>
 							<p>{{ product.description }}</p>
@@ -115,10 +107,7 @@
 
 							<div class="product-btns">
 
-
-
-								<button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i>Book This Car Now</button>
-
+								<a class="text-uppercase primary-btn" href="/product/addreservation/{{ product.id }}">Book This Car Now</a>
 
 
 							</div>

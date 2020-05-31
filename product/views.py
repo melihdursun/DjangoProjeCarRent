@@ -3,7 +3,9 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
-from product.models import CommentForm, Comment
+from home.models import UserProfile
+from product.models import CommentForm, Comment, ReservationForm, Reservation, Product, Category
+
 
 # Create your views here.
 def index(request):
@@ -33,3 +35,53 @@ def addcomment(request, id):
     return HttpResponse(url)
 
 
+@login_required(login_url='/login')
+def addreservation(request, id):
+    current_user = request.user
+    product = Product.objects.get(pk=id)
+    form = ReservationForm()
+    profile = UserProfile.objects.get(user_id=current_user.id)
+    category = Category.objects.all()
+    reservations = Reservation.objects.filter(user_id=current_user.id)
+    context = {'product': product, 'form': form, 'profile': profile, 'category': category,
+               'reservations': reservations}
+    if request.method == 'POST':
+        form = ReservationForm(request.POST)
+        if form.is_valid():
+            current_user = request.user
+
+            data = Reservation()
+            data.user_id = current_user.id
+            data.product_id = id
+            data.name = form.cleaned_data['name']
+            data.email = form.cleaned_data['email']
+            data.phone = form.cleaned_data['phone']
+            data.location = form.cleaned_data['location']
+            data.address = form.cleaned_data['address']
+            data.days = form.cleaned_data['days']
+            data.checkin = form.cleaned_data['checkin']
+            data.checkout = form.cleaned_data['checkout']
+            data.ip = request.META.get('REMOTE_ADDR')
+            data.save()
+            messages.success(request, 'Rezervasyonunuz Başarıyla Alındı. Yetkililerimiz En Kısa Sürede Sizinle İletişime Geçecektir...')
+            return HttpResponseRedirect('/user/bookings/')
+
+    return render(request, 'myreservation.html',context)
+
+
+
+
+
+
+#def newreservation(request, id):
+    #car = Car.objects.get(pk=id)
+    #current_user = request.user
+    #profile = UserProfile.objects.get(user_id=current_user.id)
+    #category = Category.objects.all()
+    #reservation = Reservation.objects.filter(user_id=current_user.id)
+    #context = {'category': category,
+    #          'reservation': reservation,
+    #          'profile': profile,
+    #          'car': car,
+    #          }
+    #return render(request, 'newreservation.html', context)

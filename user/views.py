@@ -7,7 +7,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from home.models import UserProfile
-from product.models import Category, Comment
+from product.models import Category, Comment, Reservation
 from user.forms import UserUpdateForm, ProfileUpdateForm
 
 
@@ -79,3 +79,15 @@ def deletecomment(request, id):
     Comment.objects.filter(id=id, user_id=current_user.id).delete()
     messages.success(request, 'Comment deleted...')
     return HttpResponseRedirect('/user/comments')
+
+
+@login_required(login_url='/login')
+def bookings(request):
+    category = Category.objects.all()
+    current_user = request.user
+    bookings = Reservation.objects.filter(user_id=current_user.id)
+    context = {
+        'category': category,
+        'bookings': bookings,
+    }
+    return render(request, 'user_bookings.html', context)

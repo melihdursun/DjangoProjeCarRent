@@ -2,64 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50c6cfcb-3a74-452f-88d8-49cd1653bd49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0005_userprofile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0006_faq.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0007_auto_20200529_0338.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0008_faq_ordernumber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/faq.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/products_search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/templates/Shopcart_products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0008_comment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0009_auto_20200521_2328.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0010_auto_20200524_0022.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0011_auto_20200524_0029.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/users/20190717_155927.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/users/20190717_160027.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/users/ayse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/users/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_comments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/myreservation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/migrations/0012_reservation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1honda-s2000jpg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2honda-s2000jpg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/3honda-s2000jpg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/Honda_CRZ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/Honda_CRZ1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/Honda_CRZ2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/Honda_CRZ3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/honda-s2000jpg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/mazda1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/mazda2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/mazda3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/mazda4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_bookings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,12 +68,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/templates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Django\project2\home\templates" />
       <recent name="C:\Django\project2\user\templates" />
+      <recent name="C:\Django\project2\home\templates" />
       <recent name="C:\Django\project2\order\templates" />
       <recent name="C:\Django\project2\order" />
       <recent name="C:\Django\project2\user" />
@@ -146,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590017209644</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="...">
+      <created>1590762340981</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590762340981</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -161,18 +141,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1199" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585494628052" />
-    <state x="741" y="118" width="969" height="803" key="CommitChangelistDialog2" timestamp="1590017202315">
+    <state x="741" y="118" width="969" height="803" key="CommitChangelistDialog2" timestamp="1590762331338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="741" y="118" width="969" height="803" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590017202315" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1590017221171">
+    <state x="741" y="118" width="969" height="803" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590762331338" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1590776701351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590017221171" />
-    <state x="1148" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1590762045295">
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590776701351" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1590762348794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1148" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590762045295" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590762348794" />
+    <state x="1148" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1590877015349">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1148" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590877015349" />
     <state x="771" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589627014724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

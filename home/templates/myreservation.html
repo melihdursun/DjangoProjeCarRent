@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %} {{ setting.title }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block header %}
+    {% include "header.html" %}
+{% endblock %}
+
+
+
+{% block content %}
+
+<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Add Reservation
+							</h1>
+							<p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="#"> Reservation</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+					<!-- Start contact-page Area -->
+			<section class="contact-page-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+
+							<form name="reservation" action="/product/addreservation/{{ product.id }}" method="post" role="form" class="clearfix">
+								{% csrf_token %}
+								<input type="text" size="50" id="id_name" name="name" placeholder="Name" />
+								<div class="validation"></div>
+								<input type="text" size="50" id="id_email" name="email" placeholder="Email" />
+								<div class="validation"></div>
+								<input type="text" size="50" id="id_phone" name="phone" placeholder="Phone" />
+								<div class="validation"></div>
+								<input type="text" size="50" id="id_address" name="address" placeholder="Address" />
+								<div class="validation"></div>
+								<input type="text" size="50" id="id_location" name="location" placeholder="Location" />
+								<div class="validation"></div>
+								One-Day Fee:<input type="text" size="37" id="id_price" name="price" value="{{ product.price }}" placeholder="Price" />
+								<div class="validation"></div>
+								Checkin:<input type="date" size="25" id="id_checkin" name="checkin" placeholder="Checkin" />
+								<div class="validation"></div>
+								Checkout:<input type="date" size="25" id="id_checkout" name="checkout" placeholder="Checkout" />
+								<div class="validation"></div>
+								Days:<input type="number" size="25" id="id_days" name="days" placeholder="" data-rule="minlen:4" />
+								<div class="validation"></div>
+
+								{% if user.id is not None %}
+									<br>
+									<button class="text-uppercase primary-btn" type="submit">Reservation Now</button>
+								{% else %}
+									<a href="/login/">Please Login for Reservation</a>
+								{% endif %}
+
+							</form>
+
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+			<!-- End contact-page Area -->
+
+
+{% endblock %}
