@@ -5,11 +5,11 @@
 {% block description %} {{ categorydata.description }} {% endblock %}
 
 {% block head %}
-    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+<link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
 {% endblock %}
 
 {% block header %}
-    {% include "header.html" %}
+{% include "header.html" %}
 {% endblock %}
 
 
@@ -19,33 +19,33 @@
 
 
 <!-- start banner Area -->
-			<section class="banner-area relative" id="home">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							<h1 class="text-white">
-								Search
-							</h1>
-							<p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/category/{{ product.category_id }}/{{ product.category.slug }}">{{ categorydata.title }}</a></p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->
+<section class="banner-area relative" id="home">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center">
+			<div class="about-content col-lg-12">
+				<h1 class="text-white">
+					Search
+				</h1>
+				<p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/category/{{ product.category_id }}/{{ product.category.slug }}">{{ categorydata.title }}</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End banner Area -->
 
 
 
 <div class="pull-left">
 	<div class="header-search">
-	<br><br>
-	<form action="/search/" method="post">
-		{% csrf_token %}
-		<input name="query" class="input search-input" type="text" placeholder="Enter your keyword">
-		<button class="search-btn"><i class="fa fa-search"></i></button>
-	</form>
+		<br><br>
+		<form action="/search/" method="post">
+			{% csrf_token %}
+			<input name="query" class="input search-input" type="text" placeholder="Enter your keyword">
+			<button class="search-btn"><i class="fa fa-search"></i></button>
+		</form>
 
-</div>
+	</div>
 </div>
 
 <div class="section">
@@ -59,12 +59,12 @@
 					<th>Price</th>
 				</tr>
 				{% for rs in products %}
-					<tr>
-						<td> <a href="/product/{{ rs.id }}/{{ rs.slug }}"> <img src="{{ rs.image.url }}" style="height: 300px;width:500px"  alt=""> </a> </td>
-						<td> <h4 class="product-name"><a href="/product/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a> </h4> </td>
-						<td> <a href="/category/{{ rs.category.id }}/{{ rs.category.slug }}">{{ rs.category }}</a> </td>
-						<td> <h4>TL {{ rs.price }}</h4></td>
-					</tr>
+				<tr>
+					<td> <a href="/product/{{ rs.id }}/{{ rs.slug }}"> <img src="{{ rs.image.url }}" style="height: 300px;width:500px"  alt=""> </a> </td>
+					<td> <h4 class="product-name"><a href="/product/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a> </h4> </td>
+					<td> <a href="/category/{{ rs.category.id }}/{{ rs.category.slug }}">{{ rs.category }}</a> </td>
+					<td> <h4>TL {{ rs.price }}</h4></td>
+				</tr>
 				{% endfor %}
 			</table>
 		</div>

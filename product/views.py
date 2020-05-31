@@ -72,16 +72,3 @@ def addreservation(request, id):
 
 
 
-
-#def newreservation(request, id):
-    #car = Car.objects.get(pk=id)
-    #current_user = request.user
-    #profile = UserProfile.objects.get(user_id=current_user.id)
-    #category = Category.objects.all()
-    #reservation = Reservation.objects.filter(user_id=current_user.id)
-    #context = {'category': category,
-    #          'reservation': reservation,
-    #          'profile': profile,
-    #          'car': car,
-    #          }
-    #return render(request, 'newreservation.html', context)

@@ -2,41 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50c6cfcb-3a74-452f-88d8-49cd1653bd49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uploads/images/1Berlingo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/1Doblo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/1L200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/1bmw_z4jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/1kango.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/2Berlingo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/2L200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/2bmw_z4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/2doblo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/2kango.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/3Berlingo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/3Doblo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/3L200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/3bmw_z4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/3kango.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/4Berlingo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/Doblo_2020.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/Fluence1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/Fluence3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/L200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/bmw_z4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/egea1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/egea2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/egea3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/fluence2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/fluence4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/focus1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/focus2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/focus3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/focus4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/kango.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/Isuzu-D-MAX-X-Rider-grey-rear.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/a6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/a61.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/e2501.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/e250_aeOqySB.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/hilux.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/hilux1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/izusu1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/q8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/q81.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/suzuki-vitaravitara.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/vitara2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/products_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/products_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590885636699</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Last Update">
+      <created>1590959318757</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590959318757</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -146,25 +134,26 @@
     <MESSAGE value="Base değüşti" />
     <MESSAGE value="Base değişti" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="Last Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1199" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585494628052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1199" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585494628052" />
-    <state x="741" y="118" width="969" height="803" key="CommitChangelistDialog2" timestamp="1590885631742">
+    <state x="741" y="118" width="969" height="803" key="CommitChangelistDialog2" timestamp="1590959314407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="741" y="118" width="969" height="803" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590885631742" />
+    <state x="741" y="118" width="969" height="803" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590959314407" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1590776701351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590776701351" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1590885645729">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1590959332753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590885645729" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590959332753" />
     <state x="1148" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1590957899624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
